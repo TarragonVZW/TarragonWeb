@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Tarragon</title>
+    <link href="css/tarragon.css" rel="stylesheet" type="text/css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favico/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favico/favicon-16x16.png">
+    <!--<link rel="manifest" href="favico/site.webmanifest">-->
+</head>
+<body>
+
+<div class="navbar" id="topnav">
+    <a href="#">Home</a>
+    <a href="#events">Events</a>
+    <a href="#dragons">Dragons</a>
+    <a href="#contact">Contact</a>
+    <a href="http://discord.gg/TjDUu2Gkag" target="_blank">Discord</a>
+</div>
+<div class="content" style="padding-top: 50px">
+
+    <a href="http://discord.gg/TjDUu2Gkag" target="_blank">
+        <img class="mainlogo" src="images/TarragonLogo_2023.png" alt="Tarragon Logo"></a>
+
+    <div class="sponsor_events">
+
+        <h1>MEMBER BENEFITS</h1>
+        <div class="sponsorlist" id="sponsors"></div>
+
+        <script>
+            var request = new XMLHttpRequest();
+            request.open("GET", "dbs/sponsors.json", false);
+            request.send(null);
+            const sponsorDB = JSON.parse(request.responseText);
+            let sponsors = "";
+
+            for (let x in sponsorDB) {
+                sponsors += "<a  href=" + sponsorDB[x].link + " target=\"_blank\"><div class=\"sponsor\">";
+                sponsors += "<h2>" + sponsorDB[x].name + "</h2>";
+                sponsors += "<img class =\"sponsorlogo\" src=" + sponsorDB[x].logo + " alt=" + sponsorDB[x].logo + ">";
+                sponsors += "<p>" + sponsorDB[x].benefit + "</p>";
+                sponsors += "</div></a>";
+            }
+            document.getElementById("sponsors").innerHTML = sponsors;
+        </script>
+
+
+        <div id="events" class="eventlist"></div>
+
+        <script>
+            var request = new XMLHttpRequest();
+            request.open("GET", "dbs/events.json", false);
+            request.send(null);
+            const eventDB = JSON.parse(request.responseText);
+
+            eventDB.sort(function(a, b){
+                return Date.parse(a.date) - Date.parse(b.date);
+            });
+
+            let events = "<a href=\"http://discord.gg/TjDUu2Gkag\" target=\"_blank\"><h1> UPCOMING EVENTS </h1></a><p>";
+
+            for (let x in eventDB) {
+                if(Date.parse(eventDB[x].date) >= new Date() )
+                events += eventDB[x].date + " - " + eventDB[x].name + "<br>";
+            }
+            events += "</p>";
+            document.getElementById("events").innerHTML = events;
+        </script>
+
+    </div>
+    <h1 id="dragons">DRAGONS</h1>
+    <p>Here are our current Dragons! These people manage the community and are approachable if you have any questions
+        about the community.</p>
+    <div id="dragonlist" class="dragonsList">
+    </div>
+
+    <script>
+        var request = new XMLHttpRequest();
+        request.open("GET", "dbs/dragons.json", false);
+        request.send(null);
+        const dragonsDB = JSON.parse(request.responseText);
+        let dragons = "";
+
+        for (let x in dragonsDB) {
+            dragons += "<a href=" + dragonsDB[x].link + " target=\"_blank\">"
+            dragons += "<div class=\"dragon\">";
+            dragons += "<h2>" + dragonsDB[x].name + "</h2>";
+            dragons += "<h3>" + dragonsDB[x].title + "</h3>";
+            dragons += "<img class =\"sponsorlogo\" src=" + dragonsDB[x].image + " alt=" + dragonsDB[x].image + ">";
+            dragons += "</div></a>";
+        }
+        document.getElementById("dragonlist").innerHTML = dragons;
+    </script>
+
+    <div class="foot">
+        <div>
+            <h1 id="contact">CONTACT</h1>
+            <center>you can always reach us at <a href="mailto:info@tarragon.be" target="_blank">info@tarragon.be</a></center>
+        </div>
+        <iframe id="discord" class="discordwidget" src="https://discord.com/widget?id=878674783972261918&theme=dark"
+                allowtransparency="true" frameborder="0"
+                sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+
+    </div>
+</div>
+</body>
+</html>
