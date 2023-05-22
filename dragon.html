@@ -13,41 +13,106 @@
 <body>
 
 <div class="navbar" id="topnav">
-    <a href="tarragon.html#">Home</a>
-    <a href="tarragon.html">Dragons</a>
-    <a href="tarragon.html#contact">Contact</a>
-    <a href="tarragon.html#discord">Discord</a>
+    <a href="index.html#">Home</a>
+    <a href="index.html">Dragons</a>
+    <a href="index.html#contact">Contact</a>
+    <a href="index.html#discord">Discord</a>
 </div>
 <div class="content" style="padding-top: 50px">
 
-<script>
-    var request = new XMLHttpRequest();
-    request.open("GET", "dbs/events.json", false);
-    request.send(null);
+    <div class="row">
+        <div class="column" id="list"></div>
+        <div class="column">
+            <div class="properties">
+                <h2 id="prop_event_name" contenteditable="true">prop_name</h2>
+                <input id="prop_event_date" type="date">
+                <button onClick="apply_edits()">EDIT</button>
+            </div>
+        </div>
+    </div>
 
-    const sponsorDB = JSON.parse(request.responseText);
+    <script>
 
-    const fs = require('fs');
-    request = new XMLHttpRequest();
-    request.open("POST", "dbs/events.json");
-    request.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
-    request.send(JSON.stringify([
-        {
-            "name": "Board Game Night",
-            "date": "2023-05-24"
-        },
-        {
-            "name": "Last Night on Earth",
-            "date": "2023-06-26"
-        },
-        {
-            "name": "test",
-            "date": "2023-05-30"
+        let selected_index = 0;
+
+        let request = new XMLHttpRequest();
+        request.open("GET", "dbs/events.json", false);
+        request.send(null);
+
+        var event_json = JSON.parse(request.responseText);
+
+        request = new XMLHttpRequest();
+        request.open("POST", "dbs/events.json");
+        request.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+        request.send(JSON.stringify(null));
+
+        load_events(event_json);
+        select_index(selected_index);
+
+        function load_events(eventDB) {
+            let event_list = ""
+
+            for (let x in eventDB) {
+                event_list += "<div class=\"event_object";
+                if (x == selected_index) {
+                    event_list += " selected_item"
+                }
+                event_list += "\" onclick=\"select_index(" + x + ")\">";
+                event_list += "<h2>" + eventDB[x].name + "</h2>";
+                event_list += "<h3>" + eventDB[x].date + "</h3>";
+                event_list += "<p style=\"color: red; width:fit-content\" onclick=\"delete_event(" + x + ")\">[x]</p>"
+                event_list += "</div>";
+            }
+
+
+            event_list += "<div class=\"event_object\" onclick=\"add_event()\"><h2>+</h2></div>";
+
+            document.getElementById("list").innerHTML = event_list;
         }
-    ]))
+
+        function add_event() {
+            const today = new Date();
+            event_json.push({
+                "name": "new_event",
+                "date": today.getFullYear() + "-" + pad(today.getMonth() + 1, 2) + "-" + pad(today.getDate(), 2)
+            })
 
 
-</script>
+            select_index(event_json.length -1);
+
+        }
+
+        function apply_edits()
+        {
+            event_json[selected_index].name = document.getElementById("prop_event_name").innerHTML;
+            event_json[selected_index].date = document.getElementById("prop_event_date").value;
+
+            load_events(event_json);
+        }
+
+        function select_index(index) {
+            selected_index = index;
+            document.getElementById("prop_event_name").innerHTML = event_json[index].name;
+            document.getElementById("prop_event_date").value = event_json[index].date;
+            load_events(event_json);
+        }
+
+        function delete_event(event_index) {
+
+            event_json.splice(event_index, 1);
+
+            load_events(event_json);
+
+        }
+
+        function pad(num, size) {
+            num = num.toString();
+            while (num.length < size) num = "0" + num;
+            return num;
+        }
+
+
+    </script>
 
 </div>
 </body>

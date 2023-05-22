@@ -95,7 +95,7 @@
 
 /* headers */
 h1 {
-    float: bottom;
+    float: none;
     display: block;
     text-align: center;
     padding: var(--padding) var(--padding);
@@ -307,4 +307,47 @@ p {
     .discordwidget {
         width: 100%;
     }
+}
+
+
+
+/* content editor styles */
+.column {
+    float: left;
+    width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.event_object {
+    margin: var(--padding);
+    background: var(--dark);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 80%;
+    height: 100px;
+    border: 5px solid var(--primary_dark);
+}
+
+.selected_item {
+    border: 5px solid var(--primary);
+}
+
+.properties {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background: var(--dark);
+
+    margin-top: 150px;
+
+    width: 40%;
+    height: 200px;
+    position: fixed;
 }
