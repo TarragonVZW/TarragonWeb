@@ -55,15 +55,16 @@
             request.send(null);
             const eventDB = JSON.parse(request.responseText);
 
-            eventDB.sort(function(a, b){
+            eventDB.sort(function (a, b) {
                 return Date.parse(a.date) - Date.parse(b.date);
             });
 
             let events = "<a href=\"http://discord.gg/TjDUu2Gkag\" target=\"_blank\"><h1> UPCOMING EVENTS </h1></a><p>";
 
             for (let x in eventDB) {
-                if(Date.parse(eventDB[x].date) >= new Date() )
-                events += eventDB[x].date + " - " + eventDB[x].name + "<br>";
+                console.log(new Date());
+                if (Date.parse(eventDB[x].date) + 86400000 >= new Date())
+                    events += eventDB[x].date + " - " + eventDB[x].name + "<br>";
             }
             events += "</p>";
             document.getElementById("events").innerHTML = events;
@@ -97,7 +98,8 @@
     <div class="foot">
         <div>
             <h1 id="contact">CONTACT</h1>
-            <center>you can always reach us at <a href="mailto:info@tarragon.be" target="_blank">info@tarragon.be</a></center>
+            <center>you can always reach us at <a href="mailto:tarragonvzw@gmail.com" target="_blank">tarragonvzw@gmail.com</a>
+            </center>
         </div>
         <iframe id="discord" class="discordwidget" src="https://discord.com/widget?id=878674783972261918&theme=dark"
                 allowtransparency="true" frameborder="0"

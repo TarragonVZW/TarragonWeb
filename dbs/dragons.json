@@ -2,36 +2,43 @@
   {
     "name": "Mattis",
     "title": "Thane",
-    "image": "https://media.licdn.com/dms/image/D5603AQGb-ySUNXdZkg/profile-displayphoto-shrink_200_200/0/1671116055922?e=1689811200&v=beta&t=iJX_v0SsunsRJNMKppPYNyU0gv9-BMAScousAUQ9cdE"
+    "image": "https://media.licdn.com/dms/image/D5603AQGb-ySUNXdZkg/profile-displayphoto-shrink_200_200/0/1671116055922?e=1689811200&v=beta&t=iJX_v0SsunsRJNMKppPYNyU0gv9-BMAScousAUQ9cdE",
+    "link": "https://www.artstation.com/mattisderyckere"
   },
   {
     "name": "Stef",
     "title": "Viceroy",
-    "image": "https://cdn.discordapp.com/avatars/187986108645244928/4bc1babcf5888a1235f8476cb683bdcf.webp"
+    "image": "https://cdn.discordapp.com/avatars/187986108645244928/4bc1babcf5888a1235f8476cb683bdcf.webp",
+    "link": ""
   },
   {
     "name": "Farah",
     "title": " ",
-    "image": "https://media.licdn.com/dms/image/C4D03AQFBBTKDlOsBeg/profile-displayphoto-shrink_200_200/0/1647528579367?e=1689811200&v=beta&t=6Sd64WMXmzfc6VnDDSnLZNuFC39NZ4MTJwugDSNJWJQ"
+    "image": "https://media.licdn.com/dms/image/C4D03AQFBBTKDlOsBeg/profile-displayphoto-shrink_200_200/0/1647528579367?e=1689811200&v=beta&t=6Sd64WMXmzfc6VnDDSnLZNuFC39NZ4MTJwugDSNJWJQ",
+    "link": "https://www.artstation.com/farahclaessens"
   },
   {
     "name": "Heleen",
     "title": " ",
-    "image": "https://cdnb.artstation.com/p/users/avatars/002/453/565/large/5a3ef2351f5e7280ad2e55e2491c1faf.jpg"
+    "image": "https://cdnb.artstation.com/p/users/avatars/002/453/565/large/5a3ef2351f5e7280ad2e55e2491c1faf.jpg",
+    "link": "https://www.artstation.com/heleenvlaeyen"
   },
   {
     "name": "Jasper",
     "title": " ",
-    "image": "https://media.licdn.com/dms/image/C4E03AQHjuov825b4Bw/profile-displayphoto-shrink_200_200/0/1647421620856?e=1689811200&v=beta&t=7WXfjLaS1nJ_xHDEL98e3Gms_9oxWdfGVLfcoat-rmo"
+    "image": "https://media.licdn.com/dms/image/C4E03AQHjuov825b4Bw/profile-displayphoto-shrink_200_200/0/1647421620856?e=1689811200&v=beta&t=7WXfjLaS1nJ_xHDEL98e3Gms_9oxWdfGVLfcoat-rmo",
+    "link": "https://www.artstation.com/zorth"
   },
   {
     "name": "Juul",
     "title": " ",
-    "image": "https://media.licdn.com/dms/image/C4E03AQFb_H6IJ2ootw/profile-displayphoto-shrink_200_200/0/1654594652639?e=1689811200&v=beta&t=QRMOyzDwi9fS3PouHTwEh3gTH996qeQTwwM62YeXvis"
+    "image": "https://media.licdn.com/dms/image/C4E03AQFb_H6IJ2ootw/profile-displayphoto-shrink_200_200/0/1654594652639?e=1689811200&v=beta&t=QRMOyzDwi9fS3PouHTwEh3gTH996qeQTwwM62YeXvis",
+    "link": "https://www.linkedin.com/in/juul-wallraf-5180b4235/"
   },
   {
     "name": "Nox",
     "title": " ",
-    "image": "https://cdn.discordapp.com/avatars/516636827483111425/7cd636d5561895c0c12418a30008e9e4.webp"
+    "image": "https://cdn.discordapp.com/avatars/516636827483111425/7cd636d5561895c0c12418a30008e9e4.webp",
+    "link": ""
   }
 ]
