@@ -295,6 +295,7 @@ p {
     display: flex;
     justify-content: space-around;
     width: 100%;
+    height: auto;
 }
 
 @media (max-width: 1200px) and (min-width: 900px) {
@@ -306,5 +307,9 @@ p {
 @media (max-width: 900px) {
     .discordwidget {
         width: 100%;
+    }
+
+    .foot {
+        flex-direction: column;
     }
 }
