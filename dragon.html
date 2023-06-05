@@ -13,10 +13,10 @@
 <body>
 
 <div class="navbar" id="topnav">
-    <a href="tarragon.html#">Home</a>
-    <a href="tarragon.html">Dragons</a>
-    <a href="tarragon.html#contact">Contact</a>
-    <a href="tarragon.html#discord">Discord</a>
+    <a href="index.html#">Home</a>
+    <a href="index.html">Dragons</a>
+    <a href="index.html#contact">Contact</a>
+    <a href="index.html#discord">Discord</a>
 </div>
 <div class="content" style="padding-top: 50px">
 
@@ -27,7 +27,6 @@
 
     const sponsorDB = JSON.parse(request.responseText);
 
-    const fs = require('fs');
     request = new XMLHttpRequest();
     request.open("POST", "dbs/events.json");
     request.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
