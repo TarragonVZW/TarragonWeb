@@ -37,7 +37,7 @@
 .navbar a {
     float: left;
     display: block;
-    color: #ffffff;
+    color: var(--light_light);
     text-align: center;
     padding: 14px 20px;
     text-decoration: none;
@@ -71,8 +71,8 @@
 @media (max-width: 900px) {
     .content {
         width: 100%;
-        margin-left: 0px;
-        margin-right: 0px;
+        margin-left: 0;
+        margin-right: 0;
     }
 }
 
@@ -95,7 +95,6 @@
 
 /* headers */
 h1 {
-    float: bottom;
     display: block;
     text-align: center;
     padding: var(--padding) var(--padding);
@@ -124,7 +123,7 @@ body {
     margin: 0;
     font-style: normal;
     font-weight: 200;
-    color: #ffffff;
+    color: var(--light_light);
 }
 
 .sponsorlist {
