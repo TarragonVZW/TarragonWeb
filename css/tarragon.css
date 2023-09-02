@@ -124,6 +124,11 @@ body {
     font-style: normal;
     font-weight: 200;
     color: var(--light_light);
+    font-size: larger;
+}
+
+b {
+    color: var(--primary_light);
 }
 
 .sponsorlist {
@@ -144,16 +149,19 @@ body {
 }
 
 .sponsor p {
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    padding: var(--padding);
+    /*margin-left: auto;*/
+    /*!*margin-right: auto;*!*/
+    /*!*display: block;*!*/
+    /*padding: var(--padding);*/
+    margin-bottom: 0;
+    margin-top: 0;
 }
 
 .sponsorlogo {
     display: block;
-    width: 250px;
-    height: auto;
+    width: auto;
+    height: 250px;
+    max-width: 250px;
     padding: var(--padding);
 }
 
@@ -182,7 +190,7 @@ body {
 @media (max-width: 900px) {
     .sponsorlist, .sponsor_events {
         padding: var(--padding);
-		width: 100%;
+        width: 100%;
     }
 
     .sponsor {

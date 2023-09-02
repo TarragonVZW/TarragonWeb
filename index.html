@@ -22,17 +22,29 @@
 </div>
 <div class="content" style="padding-top: 50px">
 
-    <a href="http://discord.gg/TjDUu2Gkag" target="_blank"><img src="images/TARRAGON_2023_horizontal_banner.png" alt="Tarragon Poster" style="width: 100%"></a>
+    <a href="http://discord.gg/TjDUu2Gkag" target="_blank"><img src="images/Tarragon_2023_Flyer_FRONT.png"
+                                                                alt="Tarragon Poster" style="width: 100%"></a>
 
     <div class="sponsor_events">
 
+        <h1>WHAT?</h1>
+        <p>Tarragon is the number 1 <b>Tabletop Gaming</b> community in Kortrijk. We organise events for new &
+            experienced
+            tabletop geeks. Whether you’re a board game veteran or want to get into D&D, we’ve got something for you!
+            Everyone is welcome!<br>We meet every Wednesday at 19:00 - 22:00 @ Crafty Potions. We host <b>Open Game
+                Nights</b>
+            where you can have a chat, a drink, and find fellow gamers to play board games, TTRPGs and do so much more!
+        </p>
+
+
         <h1>MEMBER BENEFITS</h1>
-        <p>Get your card in our discord or at Crafty Potions.</p>
+        <p>Get your card in our discord or <a href="https://forms.gle/L5g5wyNYtUtDb4D8A/" target="_blank">by filling out this form.</a>
+        </p>
         <div class="sponsorlist" id="sponsors"></div>
 
         <script>
             var request = new XMLHttpRequest();
-            request.open("GET", "dbs/sponsors.json", false);
+            request.open("GET", "https://www.googleapis.com/drive/v3/files/1GtpTdGRToi4G_5hHFgZLrzAFKicszh-9?alt=media&key=AIzaSyBQxgsVPS8OX2zqyRgZ8RRFKPw9NQIiyP0", false);
             request.send(null);
             const sponsorDB = JSON.parse(request.responseText);
             let sponsors = "";
@@ -52,7 +64,7 @@
 
         <script>
             var request = new XMLHttpRequest();
-            request.open("GET", "dbs/events.json", false);
+            request.open("GET", "https://www.googleapis.com/drive/v3/files/1Gpb2j6yL6H00fCkXjagXqrwRNyakJim4?alt=media&key=AIzaSyBQxgsVPS8OX2zqyRgZ8RRFKPw9NQIiyP0", false);
             request.send(null);
             const eventDB = JSON.parse(request.responseText);
 
@@ -80,7 +92,7 @@
 
     <script>
         var request = new XMLHttpRequest();
-        request.open("GET", "dbs/dragons.json", false);
+        request.open("GET", "https://www.googleapis.com/drive/v3/files/1GsXGpr1wyAhTfcI4fcy16_oQ20xh1Hqp?alt=media&key=AIzaSyBQxgsVPS8OX2zqyRgZ8RRFKPw9NQIiyP0", false);
         request.send(null);
         const dragonsDB = JSON.parse(request.responseText);
         let dragons = "";
@@ -98,8 +110,15 @@
 
     <div class="foot">
         <div>
-            <h1 id="contact">CONTACT</h1>you can always reach us at <a href="mailto:tarragonvzw@gmail.com" target="_blank">tarragonvzw@gmail.com</a>
-            <br>
+            <h1 id="contact">CONTACT</h1>Tarragon v.z.w.<br>
+            Sint-Jansstraat 21,<br>
+            8500 Kortrijk<br>
+            BE 0799.673.542<br>
+            RPR<br>
+            <a href="mailto:tarragonvzw@gmail.com"
+               target="_blank">tarragonvzw@gmail.com</a><br>
+            <a href="#" target="_blank">www.tarragon.be</a>
+            <br><br>
             <a href="Terms-Conditions.html">Membership Terms & Conditions</a>
         </div>
         <iframe id="discord" class="discordwidget" src="https://discord.com/widget?id=878674783972261918&theme=dark"
