@@ -38,7 +38,8 @@
 
 
         <h1>MEMBER BENEFITS</h1>
-        <p>Get your card in our discord or <a href="https://forms.gle/L5g5wyNYtUtDb4D8A/" target="_blank">by filling out this form.</a>
+        <p>Get your card in our discord or <a href="https://forms.gle/L5g5wyNYtUtDb4D8A/" target="_blank">by filling out
+            this form.</a>
         </p>
         <div class="sponsorlist" id="sponsors"></div>
 
@@ -63,21 +64,33 @@
         <div id="events" class="eventlist"></div>
 
         <script>
+            const monthNames = ["January", "February", "March", "April", "May", "June",
+                "July", "August", "September", "October", "November", "December"
+            ];
             var request = new XMLHttpRequest();
             request.open("GET", "https://www.googleapis.com/drive/v3/files/1Gpb2j6yL6H00fCkXjagXqrwRNyakJim4?alt=media&key=AIzaSyBQxgsVPS8OX2zqyRgZ8RRFKPw9NQIiyP0", false);
             request.send(null);
-            const eventDB = JSON.parse(request.responseText);
+            let getEventDB = JSON.parse(request.responseText);
 
-            eventDB.sort(function (a, b) {
+            getEventDB.sort(function (a, b) {
                 return Date.parse(a.date) - Date.parse(b.date);
             });
 
+
             let events = "<a href=\"http://discord.gg/TjDUu2Gkag\" target=\"_blank\"><h1> UPCOMING EVENTS </h1></a><p>";
 
+            let eventDB = [];
+
+            for (let x in getEventDB) {
+                if (Date.parse(getEventDB[x].date) + 86400000 >= new Date())
+                    eventDB.push(x);
+            }
+
+            eventDB.slice(0, 6);
+
             for (let x in eventDB) {
-                console.log(new Date());
-                if (Date.parse(eventDB[x].date) + 86400000 >= new Date())
-                    events += eventDB[x].date + " - " + eventDB[x].name + "<br>";
+                let eventDate = new Date(Date.parse(getEventDB[x].date) + 86400000);
+                events += eventDate.getDate() + " " + monthNames[eventDate.getMonth()] + " - " + getEventDB[x].name + "<br>";
             }
             events += "</p>";
             document.getElementById("events").innerHTML = events;
