@@ -82,15 +82,15 @@
             let eventDB = [];
 
             for (let x in getEventDB) {
-                if (Date.parse(getEventDB[x].date) + 86400000 >= new Date())
-                    eventDB.push(x);
+                if (Date.parse(getEventDB[x].date) + 86400000 >= Date.parse(new Date())){
+                    eventDB.push(getEventDB[x]);
             }
 
             eventDB.slice(0, 6);
 
             for (let x in eventDB) {
-                let eventDate = new Date(Date.parse(getEventDB[x].date) + 86400000);
-                events += eventDate.getDate() + " " + monthNames[eventDate.getMonth()] + " - " + getEventDB[x].name + "<br>";
+                let eventDate = new Date(Date.parse(eventDB[x].date) + 86400000);
+                events += eventDate.getDate() + " " + monthNames[eventDate.getMonth()] + " - " + eventDB[x].name + "<br>";
             }
             events += "</p>";
             document.getElementById("events").innerHTML = events;
