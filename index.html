@@ -79,19 +79,21 @@
 
             let events = "<a href=\"http://discord.gg/TjDUu2Gkag\" target=\"_blank\"><h1> UPCOMING EVENTS </h1></a><p>";
 
-            let eventDB = [];
+            let nextEventIndex = 0;
 
             for (let x in getEventDB) {
-                if (Date.parse(getEventDB[x].date) + 86400000 >= Date.parse(new Date())){
-                    eventDB.push(getEventDB[x]);
+                if (Date.parse(getEventDB[x].date) + 86400000 >= Date.parse(new Date())) {
+                    nextEventIndex = parseInt(x);
+                    break;
+                }
             }
 
-            eventDB.slice(0, 6);
 
-            for (let x in eventDB) {
-                let eventDate = new Date(Date.parse(eventDB[x].date) + 86400000);
-                events += eventDate.getDate() + " " + monthNames[eventDate.getMonth()] + " - " + eventDB[x].name + "<br>";
+            for (let i = 0; i < 6; i++) {
+                let eventDate = new Date(Date.parse(getEventDB[(i + nextEventIndex)].date) + 86400000);
+                events += eventDate.getDate() + " " + monthNames[eventDate.getMonth()] + " - " + getEventDB[(i + nextEventIndex)].name + "<br>";
             }
+
             events += "</p>";
             document.getElementById("events").innerHTML = events;
         </script>
