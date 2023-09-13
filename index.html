@@ -82,7 +82,7 @@
             let nextEventIndex = 0;
 
             for (let x in getEventDB) {
-                if (Date.parse(getEventDB[x].date) + 86400000 >= Date.parse(new Date())) {
+                if (Date.parse(getEventDB[x].date) - 86400000 >= Date.parse(new Date())) {
                     nextEventIndex = parseInt(x);
                     break;
                 }
@@ -90,7 +90,7 @@
 
 
             for (let i = 0; i < 6; i++) {
-                let eventDate = new Date(Date.parse(getEventDB[(i + nextEventIndex)].date) + 86400000);
+                let eventDate = new Date(Date.parse(getEventDB[(i + nextEventIndex)].date));
                 events += eventDate.getDate() + " " + monthNames[eventDate.getMonth()] + " - " + getEventDB[(i + nextEventIndex)].name + "<br>";
             }
 
