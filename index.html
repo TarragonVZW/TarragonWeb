@@ -45,7 +45,7 @@
 
         <script>
             var request = new XMLHttpRequest();
-            request.open("GET", "https://www.googleapis.com/drive/v3/files/1GtpTdGRToi4G_5hHFgZLrzAFKicszh-9?alt=media&key=AIzaSyBQxgsVPS8OX2zqyRgZ8RRFKPw9NQIiyP0", false);
+            request.open("GET", "dbs/sponsors.json", false);
             request.send(null);
             const sponsorDB = JSON.parse(request.responseText);
             let sponsors = "";
@@ -68,7 +68,7 @@
                 "July", "August", "September", "October", "November", "December"
             ];
             var request = new XMLHttpRequest();
-            request.open("GET", "https://www.googleapis.com/drive/v3/files/1Gpb2j6yL6H00fCkXjagXqrwRNyakJim4?alt=media&key=AIzaSyBQxgsVPS8OX2zqyRgZ8RRFKPw9NQIiyP0", false);
+            request.open("GET", "dbs/events.json", false);
             request.send(null);
             let getEventDB = JSON.parse(request.responseText);
 
@@ -107,7 +107,7 @@
 
     <script>
         var request = new XMLHttpRequest();
-        request.open("GET", "https://www.googleapis.com/drive/v3/files/1GsXGpr1wyAhTfcI4fcy16_oQ20xh1Hqp?alt=media&key=AIzaSyBQxgsVPS8OX2zqyRgZ8RRFKPw9NQIiyP0", false);
+        request.open("GET", "dbs/dragons.json", false);
         request.send(null);
         const dragonsDB = JSON.parse(request.responseText);
         let dragons = "";
