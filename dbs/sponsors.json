@@ -10,5 +10,11 @@
     "logo": "images/logoPauls2015.png",
     "link": "http://www.paulsboutique.be",
     "benefit": "2€ discount when purchasing a burger."
+  },
+  {
+    "name": "B'aristokat",
+    "logo": "images/Baristokat.png",
+    "link": "https://www.baristokat-kattencafe.be",
+    "benefit": "1€ discount on seasonal snacks."
   }
 ]

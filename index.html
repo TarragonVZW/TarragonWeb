@@ -82,7 +82,7 @@
             let nextEventIndex = 0;
 
             for (let x in getEventDB) {
-                if (Date.parse(getEventDB[x].date) >= Date.parse(Date.now()) + 86400000 ) {
+                if (Date.parse(getEventDB[x].date) >= Date.now() + 86400000 ) {
                     nextEventIndex = parseInt(x);
                     break;
                 }
