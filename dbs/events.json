@@ -1,68 +1,5 @@
 [
-  {
-    "name": "Welcome Event NL",
-    "date": "2023-09-15"
-  },
-  {
-    "name": "Welcome Event EN",
-    "date": "2023-09-16"
-  },
-  {
-    "name": "Board Game Night",
-    "date": "2023-09-20"
-  },
-  {
-    "name": "One Shot Night",
-    "date": "2023-10-04"
-  },
-  {
-    "name": "Casino Night",
-    "date": "2023-10-18"
-  },
-  {
-    "name": "TCG Night",
-    "date": "2023-11-15"
-  },
-  {
-    "name": "Workshop Night",
-    "date": "2023-11-29"
-  },
-  {
-    "name": "Santa Drink",
-    "date": "2023-12-13"
-  },
-  {
-    "name": "Open Game Night",
-    "date": "2023-09-27"
-  },
-  {
-    "name": "Open Game Night",
-    "date": "2023-10-11"
-  },
-  {
-    "name": "Open Game Night",
-    "date": "2023-10-25"
-  },
-  {
-    "name": "Open Game Night",
-    "date": "2023-11-08"
-  },
-  {
-    "name": "Open Game Night",
-    "date": "2023-11-22"
-  },
-  {
-    "name": "Open Game Night",
-    "date": "2023-12-06"
-  },
-  {
-    "name": "Open Game Night",
-    "date": "2023-12-20"
-  },
-  {
-    "name": "Open Game Night",
-    "date": "2023-12-27"
-  },
+
   {
     "name": "Open Game Night",
     "date": "2024-01-03"
@@ -91,43 +28,43 @@
 
 
   {
-    "name": "Open Game Night",
+    "name": "Homie Hunt",
     "date": "2024-02-14"
   },
   {
     "name": "Open Game Night",
-    "date": "2024-02-14"
+    "date": "2024-02-21"
   },
   {
     "name": "Open Game Night",
-    "date": "2024-02-14"
+    "date": "2024-02-28"
+  },
+  {
+    "name": "Quiz",
+    "date": "2024-03-06"
   },
   {
     "name": "Open Game Night",
-    "date": "2024-02-14"
+    "date": "2024-03-13"
   },
   {
     "name": "Open Game Night",
-    "date": "2024-02-14"
+    "date": "2024-03-20"
+  },
+  {
+    "name": "Wargames",
+    "date": "2024-03-27"
   },
   {
     "name": "Open Game Night",
-    "date": "2024-02-14"
+    "date": "2024-04-03"
   },
   {
     "name": "Open Game Night",
-    "date": "2024-02-14"
+    "date": "2024-04-10"
   },
   {
-    "name": "Open Game Night",
-    "date": "2024-02-14"
-  },
-  {
-    "name": "Open Game Night",
-    "date": "2024-02-14"
-  },
-  {
-    "name": "Open Game Night",
+    "name": "Cosplay Workshop",
     "date": "2024-04-17"
   },
   {
@@ -139,7 +76,7 @@
     "date": "2024-05-01"
   },
   {
-    "name": "Open Game Night",
+    "name": "One Shot Night",
     "date": "2024-05-08"
   },
   {
@@ -151,7 +88,7 @@
     "date": "2024-05-22"
   },
   {
-    "name": "Open Game Night",
+    "name": "Mini Painting Night",
     "date": "2024-05-29"
   },
   {
@@ -171,39 +108,7 @@
     "date": "2024-06-26"
   },
   {
-    "name": "Open Game Night",
-    "date": "2024-07-03"
-  },
-  {
-    "name": "Open Game Night",
-    "date": "2024-07-10"
-  },
-  {
-    "name": "Open Game Night",
-    "date": "2024-07-17"
-  },
-  {
-    "name": "Open Game Night",
-    "date": "2024-07-24"
-  },
-  {
-    "name": "Open Game Night",
-    "date": "2024-07-31"
-  },
-  {
-    "name": "Open Game Night",
-    "date": "2024-08-07"
-  },
-  {
-    "name": "Open Game Night",
-    "date": "2024-08-14"
-  },
-  {
-    "name": "Open Game Night",
-    "date": "2024-08-21"
-  },
-  {
-    "name": "Open Game Night",
-    "date": "2024-08-28"
+    "name": "Last Night on Earth!",
+    "date": "2024-06-29"
   }
 ]
