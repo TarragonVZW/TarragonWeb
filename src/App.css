@@ -1,0 +1,63 @@
+
+:root {
+    /*TARRAGON COLORS*/
+    --main-bg-color: #1E2124;
+    --main-bg-light-color: #36393E;
+    --main-bg-dark-color: #000000;
+    --main-primary-color: #942822;
+    --main-primary-light-color: #C76B54;
+    --main-primary-dark-color: #551714;
+    --main-secondary-color: #97B78E;
+    --main-seconary-dark-color: #788868;
+    --main-text-color: #F1E6E0;
+    --main-text-alt-color: #F2D3B4;
+
+    /* LNOE COLORS*/
+    --lnoe-accent: #ffcc33;
+    --lnoe-accent-text: #fafaff;
+    --lnoe-dark-bg: #01010d;
+    --lnoe-dark-text: #d8d8e5;
+    --lnoe-light-bg: #fafaff;
+    --lnoe-light-text: #01010d;
+}
+
+.section {
+    margin: 1.25rem;
+}
+
+
+body {
+    background-color: var(--main-bg-color);
+}
+
+h1 {
+    font-family: "Rockwell", serif;
+    font-weight: bold;
+    font-size: 2.027em;
+    color: var(--main-text-color);
+}
+
+h2 {
+    font-family: "Rockwell", serif;
+    font-weight: bold;
+    font-size: 1.266em;
+    color: var(--main-text-color);
+}
+
+h3 {
+    font-family: "Rockwell", serif;
+    font-weight: bold;
+    font-size: 1em;
+    color: var(--main-text-color);
+}
+
+p {
+    font-family: "Inter", sans-serif;
+    font-weight: normal;
+    font-size: 1em;
+    color: var(--main-text-color);
+}
+
+.alt-text-color {
+    color: var(--main-text-alt-color);
+}
