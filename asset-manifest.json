@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.a3cabecf.css",
-    "main.js": "/static/js/main.2bd0f08b.js",
-    "index.html": "/index.html",
-    "main.a3cabecf.css.map": "/static/css/main.a3cabecf.css.map",
-    "main.2bd0f08b.js.map": "/static/js/main.2bd0f08b.js.map"
+    "main.css": "/TarragonWeb/static/css/main.a3cabecf.css",
+    "main.js": "/TarragonWeb/static/js/main.2bd0f08b.js",
+    "index.html": "/TarragonWeb/index.html",
+    "main.a3cabecf.css.map": "/TarragonWeb/static/css/main.a3cabecf.css.map",
+    "main.2bd0f08b.js.map": "/TarragonWeb/static/js/main.2bd0f08b.js.map"
   },
   "entrypoints": [
     "static/css/main.a3cabecf.css",
