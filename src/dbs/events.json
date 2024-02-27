@@ -1,32 +1,4 @@
 [
-
-  {
-    "name": "Open Game Night",
-    "date": "2024-01-03"
-  },
-  {
-    "name": "Open Game Night",
-    "date": "2024-01-10"
-  },
-  {
-    "name": "Open Game Night",
-    "date": "2024-01-17"
-  },
-  {
-    "name": "Open Game Night",
-    "date": "2024-01-24"
-  },
-  {
-    "name": "Open Game Night",
-    "date": "2024-01-31"
-  },
-  {
-    "name": "Open Game Night",
-    "date": "2024-02-07"
-  },
-
-
-
   {
     "name": "Homie Hunt",
     "date": "2024-02-14"
@@ -40,8 +12,9 @@
     "date": "2024-02-28"
   },
   {
-    "name": "Quiz",
-    "date": "2024-03-06"
+    "name": "Pendragon's Wizarding Quiz",
+    "date": "2024-03-06",
+    "description": "Get ready to put your magical prowess to the test in the legendary Pendragon's Wizarding Quiz!<br/><br/>General info:<br/>- You have to be there from the start.<br/>- Sign up in 1 of the groups below the announcement on Discord.<br/>- There are 4 rounds.<br/><br/>Questions?<br/>Feel free to ask the Dragons."
   },
   {
     "name": "Open Game Night",
