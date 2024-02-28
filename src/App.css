@@ -73,6 +73,7 @@ h3 {
     font-family: "Inter", sans-serif;
     font-weight: bold;
     font-size: 1rem;
+    text-align: center;
     color: var(--main-text-color);
     margin: 0;
 }
@@ -233,6 +234,7 @@ header .title {
 }
 
 .card p, .card h3 {
+    text-align: left;
     margin-left: 0.5rem;
     margin-right: 0.5rem;
 }

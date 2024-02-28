@@ -4,7 +4,8 @@ import logoBarist from "../images/Baristokat.png";
 
 function MemberSection() {
     return <>
-        <h1>Member Benefits</h1>
+        <h1 style={{margin: "0"}}>Kobold Deals</h1>
+        <h3 style={{marginBottom: "0.5rem"}}>Benefits of our membership</h3>
         <div className="card-list">
             {/*{sponsors.map((sponsor, i) => {*/}
             {/*    return <div className="card" key={i}>*/}
