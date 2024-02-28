@@ -1,40 +1,33 @@
-// import sponsors from "../dbs/sponsors.json";
+import sponsors from "../dbs/sponsors.json";
 import logoPauls from "../images/logoPauls2015.png";
 import logoBarist from "../images/Baristokat.png";
 
 function MemberSection() {
+
+    const logo_dict = {
+        "Crafty Potions": "http://craftypotions.com/Textures/white_icon.png",
+        "Paul's Fresh Food Boutique": logoPauls,
+        "B'aristokat": logoBarist
+    }
+
     return <>
         <h1 style={{margin: "0"}}>Kobold Deals</h1>
         <h3 style={{marginBottom: "0.5rem"}}>Benefits of our membership</h3>
         <div className="card-list">
-            {/*{sponsors.map((sponsor, i) => {*/}
-            {/*    return <div className="card" key={i}>*/}
-            {/*        <img src={sponsor.logo} alt={sponsor.name + " Logo"} />*/}
-            {/*        <h3>{sponsor.logo}</h3>*/}
-            {/*    </div>*/}
-            {/*})}*/}
-            <div className="card">
-                <a href={"http://craftypotions.com/CraftyPotions.html"}>
-                    <img src={"http://craftypotions.com/Textures/white_icon.png"} alt={"Crafty Potions Logo"}/>
-                    <h3>Crafty Potions</h3>
-                    <p>10% discount on drinks & snacks.</p>
-                </a>
-            </div>
-            <div className="card">
-                <a href={"http://www.paulsboutique.be"}>
-                    <img src={logoPauls} alt={"Paul's Boutique Logo"}/>
-                    <h3>Paul's Fresh Food Boutique Kortrijk</h3>
-                    <p>2€ discount when purchasing a burger.</p>
-                </a>
-            </div>
-            <div className="card">
-                <a href={"https://www.baristokat-kattencafe.be"}>
-                    <img src={logoBarist} alt={"Baristokat Logo"}/>
-                    <h3>B'aristokat</h3>
-                    <p>1€ discount on seasonal snacks.</p>
-                </a>
-            </div>
+            {sponsors.map((sponsor, i) => {
+                return <div className="card" key={i}><a href={sponsor.link}>
+                    <img src={logo_dict[sponsor.name]} alt={sponsor.name + " Logo"}/>
+                    <h3>{sponsor.name}</h3>
+                    <p>{sponsor.benefit}</p>
+                </a></div>
+            })}
         </div>
+        <a href={"https://forms.gle/L5g5wyNYtUtDb4D8A/"}>
+            <div className={"SignupBtn"}>
+                <h1>Become a Kobold!</h1>
+                <small>(That's our membership)</small>
+            </div>
+        </a>
     </>
 }
 

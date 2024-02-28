@@ -224,6 +224,7 @@ header .title {
     width: calc((100% - var(--section-margin))/2);
     height: 17rem;
     margin-bottom: var(--section-margin);
+    overflow: clip;
 }
 
 .card img {
@@ -237,4 +238,18 @@ header .title {
     text-align: left;
     margin-left: 0.5rem;
     margin-right: 0.5rem;
+}
+
+.SignupBtn {
+    background-color: var(--main-primary-color);
+    border-radius: var(--rounding);
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.SignupBtn h1 {
+    margin: 0;
 }
