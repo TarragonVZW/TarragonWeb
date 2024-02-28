@@ -24,7 +24,7 @@ function EventSection() {
     renderedEvents = renderedEvents.slice(nextEventIndex, nextEventIndex + 3);
 
     return (
-        <div className="eventSection">
+        <div className="eventSection" id={"Events"}>
             <br/>
             <h1>Upcoming Events:</h1>
             <div className="eventlist">
