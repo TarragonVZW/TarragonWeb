@@ -1,16 +1,18 @@
 {
   "files": {
-    "main.css": "/TarragonWeb/static/css/main.a069afce.css",
-    "main.js": "/TarragonWeb/static/js/main.47859148.js",
+    "main.css": "/TarragonWeb/static/css/main.6ddae918.css",
+    "main.js": "/TarragonWeb/static/js/main.fd2750c9.js",
     "static/media/Tarragon_Tiny.svg": "/TarragonWeb/static/media/Tarragon_Tiny.bb94d4ac61264e8a6b4a1e59368408a9.svg",
+    "static/media/logoPauls2015.png": "/TarragonWeb/static/media/logoPauls2015.e5e551e55c5af542610e.png",
+    "static/media/Baristokat.png": "/TarragonWeb/static/media/Baristokat.9b073213d832dcd505a4.png",
     "static/media/2024_LNOE_Title_onBlack.svg": "/TarragonWeb/static/media/2024_LNOE_Title_onBlack.e7a715acd4c35de7f20e8c7b51169e02.svg",
     "static/media/Tarragon_Title.svg": "/TarragonWeb/static/media/Tarragon_Title.c73924c294104c8debdd564fa0cae518.svg",
     "index.html": "/TarragonWeb/index.html",
-    "main.a069afce.css.map": "/TarragonWeb/static/css/main.a069afce.css.map",
-    "main.47859148.js.map": "/TarragonWeb/static/js/main.47859148.js.map"
+    "main.6ddae918.css.map": "/TarragonWeb/static/css/main.6ddae918.css.map",
+    "main.fd2750c9.js.map": "/TarragonWeb/static/js/main.fd2750c9.js.map"
   },
   "entrypoints": [
-    "static/css/main.a069afce.css",
-    "static/js/main.47859148.js"
+    "static/css/main.6ddae918.css",
+    "static/js/main.fd2750c9.js"
   ]
 }
