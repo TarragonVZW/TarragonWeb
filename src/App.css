@@ -22,6 +22,8 @@
 
     --rounding: 0.3rem;
     --section-margin: 1.25rem;
+
+    transition: all 1s ease-in-out;
 }
 
 /* fonts */
@@ -196,6 +198,28 @@ header .title {
     margin-right: auto;
     left: 0;
     right: 0;
+}
+
+header .headerlinks {
+    display: none;
+}
+
+@media only screen and (min-width: 700px) {
+    header .title {
+        margin-left: 5rem;
+    }
+    header .headerlinks {
+        position: absolute;
+        display: flex;
+        height: 100%;
+        width: calc(100% - 16rem);
+        right: 0;
+        justify-content: end;
+        align-items: center;
+    }
+    header .headerlinks h2 {
+        padding: 2rem;
+    }
 }
 
 .alt-text-color {
