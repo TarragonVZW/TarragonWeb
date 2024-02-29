@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/TarragonWeb/static/css/main.707200b0.css",
-    "main.js": "/TarragonWeb/static/js/main.de1aea05.js",
+    "main.css": "/TarragonWeb/static/css/main.d255afda.css",
+    "main.js": "/TarragonWeb/static/js/main.c18f4db2.js",
     "static/media/Brenainn.jpg": "/TarragonWeb/static/media/Brenainn.75b46e76e6185d899f76.jpg",
     "static/media/Cis.png": "/TarragonWeb/static/media/Cis.0195e440ea34de806afc.png",
     "static/media/Stef.jpg": "/TarragonWeb/static/media/Stef.beca86d037144e38d7dc.jpg",
@@ -10,17 +10,24 @@
     "static/media/Sam.jpg": "/TarragonWeb/static/media/Sam.3957bd0d0ee9da22533d.jpg",
     "static/media/Tarragon_Tiny.svg": "/TarragonWeb/static/media/Tarragon_Tiny.bb94d4ac61264e8a6b4a1e59368408a9.svg",
     "static/media/Nox.jpg": "/TarragonWeb/static/media/Nox.70e99f629ee494f61094.jpg",
+    "static/media/ROCKI.TTF": "/TarragonWeb/static/media/ROCKI.af514d7dc9cdbea5b49c.TTF",
+    "static/media/ROCKBI.TTF": "/TarragonWeb/static/media/ROCKBI.1371ee1e8a40d5cdf0e1.TTF",
+    "static/media/ROCK.TTF": "/TarragonWeb/static/media/ROCK.d4c47d23aceb5a1710d6.TTF",
+    "static/media/ROCKB.TTF": "/TarragonWeb/static/media/ROCKB.a5bade2d96b9627df2c2.TTF",
+    "static/media/ROCCB___.TTF": "/TarragonWeb/static/media/ROCCB___.4f14b3c88b593b05cdb2.TTF",
+    "static/media/ROCC____.TTF": "/TarragonWeb/static/media/ROCC____.13a18ea2a96a338850ab.TTF",
+    "static/media/ROCKEB.TTF": "/TarragonWeb/static/media/ROCKEB.b679a84dcc76f24c6381.TTF",
     "static/media/logoPauls2015.png": "/TarragonWeb/static/media/logoPauls2015.e5e551e55c5af542610e.png",
     "static/media/Baristokat.png": "/TarragonWeb/static/media/Baristokat.9b073213d832dcd505a4.png",
     "static/media/2024_LNoE_Medium_onAccent.svg": "/TarragonWeb/static/media/2024_LNoE_Medium_onAccent.d187adf0f1c62206b6bad4d827d18751.svg",
     "static/media/2024_LNOE_Title_onBlack.svg": "/TarragonWeb/static/media/2024_LNOE_Title_onBlack.7d90525b30a4f816bab8287d1051a301.svg",
     "static/media/Tarragon_Title.svg": "/TarragonWeb/static/media/Tarragon_Title.1de7b0b3e9144a56b81ea6be0d4bb711.svg",
     "index.html": "/TarragonWeb/index.html",
-    "main.707200b0.css.map": "/TarragonWeb/static/css/main.707200b0.css.map",
-    "main.de1aea05.js.map": "/TarragonWeb/static/js/main.de1aea05.js.map"
+    "main.d255afda.css.map": "/TarragonWeb/static/css/main.d255afda.css.map",
+    "main.c18f4db2.js.map": "/TarragonWeb/static/js/main.c18f4db2.js.map"
   },
   "entrypoints": [
-    "static/css/main.707200b0.css",
-    "static/js/main.de1aea05.js"
+    "static/css/main.d255afda.css",
+    "static/js/main.c18f4db2.js"
   ]
 }
