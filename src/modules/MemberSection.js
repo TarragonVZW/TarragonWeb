@@ -1,11 +1,12 @@
 import sponsors from "../dbs/sponsors.json";
 import logoPauls from "../images/logoPauls2015.png";
 import logoBarist from "../images/Baristokat.png";
+import logoCraft from "../images/CraftyPotions.png";
 
 function MemberSection() {
 
     const logo_dict = {
-        "Crafty Potions": "http://craftypotions.com/Textures/white_icon.png",
+        "Crafty Potions": logoCraft,
         "Paul's Fresh Food Boutique": logoPauls,
         "B'aristokat": logoBarist
     }

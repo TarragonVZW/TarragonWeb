@@ -1,0 +1,51 @@
+/* LNOE page settings */
+
+.lnoe-panel {
+    border-radius: var(--rounding);
+    background-color: var(--lnoe-dark-bg);
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lnoe-panel img {
+    max-height: 90%;
+    max-width: 90%;
+}
+
+.LNOE {
+    color: var(--lnoe-dark-text);
+    font-family: "Open Runde", "Inter", sans-serif;
+}
+
+.LNOE b {
+    color: var(--lnoe-accent);
+}
+
+body.LNOE {
+    width: 100%;
+    height: 100%;
+    background-color: var(--lnoe-dark-bg);
+}
+
+.LNOE-btn {
+    background-color: var(--lnoe-accent);
+    border-radius: var(--rounding);
+    height: 5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*margin: auto;*/
+}
+
+.LNOE-btn img {
+    height: 4rem;
+}
+
+.LNOE-btn h1 {
+    color: var(--lnoe-accent-text);
+    margin: 1rem;
+}

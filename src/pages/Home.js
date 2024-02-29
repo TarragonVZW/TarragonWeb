@@ -8,23 +8,28 @@ import DragonSection from "../modules/DragonSection";
 
 function Home() {
     return <>
-        <div className="section" id={"Home"}>
-            <h1>What is Tarragon?</h1>
-            <p>We organize events for new & experienced tabletop geeks. Whether you’re a board game veteran or want to
-                get into D&D, we’ve got something for you! <br/><br/>
-                We meet <span className="text-primary">every Wednesday</span> from 19:00 to 22:00 @ Crafty Potions
-                (Sint-Janstraat 21, Kortrijk)</p>
+        <div className={"flexing-wrapper"}>
+            <div className="section" id={"Home"}>
+                <h1>What is Tarragon?</h1>
+                <p>We organize events for new & experienced tabletop geeks. Whether you’re a board game veteran or want
+                    to
+                    get into D&D, we’ve got something for you! <br/><br/>
+                    We meet <span className="text-primary">every Wednesday</span> from 19:00 to 22:00 @ Crafty Potions
+                    (Sint-Janstraat 21, Kortrijk)</p>
+            </div>
+            <div className={"ads"}>
+                <div className="section">
+                    <Link to="/LNOE">
+                        <h1>Don't Miss This!</h1>
+                        <div className="lnoe-panel"><img src={lnoe_title} alt="Last Night on Earth ad"/></div>
+                    </Link>
+                </div>
+                <div className="section"><DiscordBtn/></div>
+            </div>
         </div>
-        <div className="section">
-            <Link to="/LNOE">
-                <h1>Don't Miss This!</h1>
-                <div className="lnoe-panel"><img src={lnoe_title} alt="Last Night on Earth ad"/></div>
-            </Link>
-        </div>
-        <div className="section"><DiscordBtn/></div>
-        <EventSection />
-        <div className="section" id={"Kobolds"}><MemberSection /></div>
-        <div className={"section"} id={"Dragons"}><DragonSection /></div>
+        <EventSection/>
+        <div className="section" id={"Kobolds"}><MemberSection/></div>
+        <div className={"section"} id={"Dragons"}><DragonSection/></div>
         <div className={"section"} id={"Contact"}>
             <h2>Contact</h2>
             <p>Tarragon v.z.w.<br/>

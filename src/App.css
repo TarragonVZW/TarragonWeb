@@ -24,10 +24,73 @@
     --section-margin: 1.25rem;
 }
 
+/* fonts */
+@font-face {
+    font-family: "Rockwell";
+    font-style: normal;
+    font-weight: normal;
+    src: local('Rockwell Regular'), url("./fonts/ROCK.TTF") format('truetype');
+}
+@font-face {
+    font-family: "Rockwell Italic";
+    font-style: italic;
+    font-weight: normal;
+    src: local('Rockwell Italic'), url("./fonts/ROCKI.TTF") format('truetype');
+}
+@font-face {
+    font-family: "Rockwell Regular";
+    font-style: normal;
+    font-weight: normal;
+    src: local('Rockwell Regular'), url("./fonts/ROCK.TTF") format('truetype');
+}
+@font-face {
+    font-family: "Rockwell Bold";
+    font-style: normal;
+    font-weight: bold;
+    src: local('Rockwell Bold'), url("./fonts/ROCKB.TTF") format('truetype');
+}
+@font-face {
+    font-family: "Rockwell Bold Italic";
+    font-style: italic;
+    font-weight: bold;
+    src: local('Rockwell Bold Italic'), url("./fonts/ROCKBI.TTF") format('truetype');
+}
+@font-face {
+    font-family: "Rockwell Condensed";
+    font-style: normal;
+    font-weight: normal;
+    src: local('Rockwell Condensed'), url("./fonts/ROCC____.TTF") format('truetype');
+}
+@font-face {
+    font-family: "Rockwell Condensed Bold";
+    font-style: normal;
+    font-weight: bold;
+    src: local('Rockwell Condensed Bold'), url("./fonts/ROCCB___.TTF") format('truetype');
+}
+@font-face {
+    font-family: "Rockwell Extra Bold";
+    font-style: normal;
+    font-weight: bold;
+    src: local('Rockwell Extra Bold'), url("./fonts/ROCKEB.TTF") format('truetype');
+}
+@font-face {
+    font-family: "Open Runde";
+    font-style: normal;
+    font-weight: normal;
+    src: local('Open Runde'), url("./fonts/OpenRunde-Regular.woff") format("woff"), url("./fonts/OpenRunde-Regular.woff2") format("woff2");
+}
+@font-face {
+    font-family: "Open Runde Bold";
+    font-style: normal;
+    font-weight: bold;
+    src: local('Open Runde Bold'), url("./fonts/OpenRunde-Bold.woff") format("woff"), url("./fonts/OpenRunde-Bold.woff2") format("woff2");
+}
+
 .lnoe-panel {
     border-radius: var(--rounding);
     background-color: var(--lnoe-dark-bg);
     width: 100%;
+    min-width: 17rem;
     height: 6rem;
     display: flex;
     justify-content: center;
@@ -107,7 +170,13 @@ footer {
 }
 
 header {
+    z-index: 100;
     height: 5rem;
+    width: 100vw;
+    background-color: var(--main-bg-color);
+    position: fixed;
+    top: 0;
+    margin: 0;
 }
 
 header .tinylogo {
@@ -135,6 +204,7 @@ header .title {
 
 .DiscordBtn {
     width: 100%;
+    min-width: 15rem;
     height: 2.5rem;
     border-radius: var(--rounding);
     background-color: var(--main-seconary-dark-color);
@@ -143,6 +213,11 @@ header .title {
 
 .DiscordBtn h3 {
     padding-top: 0.2rem;
+}
+
+.flexing-wrapper {
+    display: flex;
+    flex-direction: column;
 }
 
 .eventSection {
@@ -162,17 +237,17 @@ header .title {
 .eventComponent {
     background-color: var(--main-primary-light-color);
     width: 90%;
-    height: 4.5rem;
+    min-height: 4.5rem;
     border-radius: var(--rounding);
 }
 
 .eventComponent h2 {
-    top: 0.5rem;
-    left: 5rem;
+    padding: 0.5rem;
+    left: 4rem;
     text-align: left;
     position: relative;
-    height: 3.5rem;
-    width: calc(100% - 6rem);
+    min-height: 3.5rem;
+    max-width: calc(100% - 6rem);
 }
 
 .event_0 {
@@ -193,7 +268,7 @@ header .title {
     text-align: center;
     padding-top: 0.2rem;
     position: absolute;
-    width: 3.5rem;
+    width: 100%;
 }
 
 .event_date h1 {
@@ -205,9 +280,44 @@ header .title {
 
 .event_date_time {
     background-color: var(--main-bg-color);
-    width:100%;
+    width: 100%;
     height: 2rem;
     margin-top: 0.2rem;
+}
+
+@media only screen and (min-width: 800px) {
+    .eventlist {
+        flex-direction: row;
+        height: auto;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .eventComponent {
+        width: 30%;
+        min-height: 6rem;
+        margin: 0.5rem;
+    }
+
+    .eventComponent h2 {
+        left: 6rem;
+        font-size: 2.027rem;
+        max-width: calc(100% - 7rem);
+    }
+
+    .event_date {
+        height: 5rem;
+        width: 5rem;
+    }
+    .event_date h1 {
+        top: 1rem;
+    }
+    .event_date small {
+        font-size: 0.624rem;
+    }
+    .event_date_time {
+        margin-top: 1rem;
+    }
 }
 
 .card-list {
@@ -221,11 +331,12 @@ header .title {
 .card {
     background-color: var(--main-bg-light-color);
     border-radius: var(--rounding);
-    width: calc((100% - var(--section-margin))/2);
-    height: 17rem;
+    width: calc((100% - var(--section-margin)) / 2);
+    min-height: 17rem;
     margin-bottom: var(--section-margin);
     overflow: clip;
 }
+
 
 .card img {
     display: block;
@@ -253,3 +364,58 @@ header .title {
 .SignupBtn h1 {
     margin: 0;
 }
+
+@media only screen and (min-width: 600px) {
+    .lnoe-panel {
+        height: 8rem !important;
+        min-width: 21rem !important;
+    }
+
+    .card-list {
+        justify-content: center;
+    }
+
+    .card {
+        width: 10rem;
+        margin: 1rem;
+    }
+
+    .SignupBtn {
+        width: 20rem;
+        margin: auto;
+    }
+
+    div#Contact {
+        width: 20rem;
+        margin: auto;
+    }
+
+    /*div#Home {*/
+    /*    width: 50%;*/
+    /*    float: left;*/
+    /*}*/
+
+    /*.ads {*/
+    /*    width: 50%;*/
+    /*}*/
+
+    .flexing-wrapper {
+        flex-direction: row;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+    }
+
+    .flexing-wrapper div.section {
+        width: 50vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    div#Rules {
+        width: 30rem;
+        margin: auto;
+    }
+}
+

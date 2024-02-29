@@ -1,15 +1,15 @@
 import React from 'react';
 import './index.css';
 import App from './App';
-import {HashRouter} from "react-router-dom";
+import {BrowserRouter, HashRouter} from "react-router-dom";
 
 import { createRoot } from 'react-dom/client';
 const container = document.getElementById('root');
 const root = createRoot(container); // createRoot(container!) if you use TypeScript
 root.render(<React.StrictMode>
-    <HashRouter>
+    <BrowserRouter>
         < App/>
-    </HashRouter>
+    </BrowserRouter>
 </React.StrictMode>);
 
 // If you want to start measuring performance in your app, pass a function
