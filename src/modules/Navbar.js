@@ -13,7 +13,7 @@ function Navbar() {
                 <a href="/#Home"><h2>Home</h2></a>
                 <a href="/#Kobolds"><h2>Kobolds</h2></a>
                 <a href="/LNOE"><h2>Last Night on Earth</h2></a>
-                <a href="https://discord.com/invite/TjDUu2Gkag" target="_blank"><h2>Discord</h2></a>
+                <a href="https://discord.com/invite/TjDUu2Gkag" target="_blank" rel="noreferrer"><h2>Discord</h2></a>
             </div>
         </header>
     )

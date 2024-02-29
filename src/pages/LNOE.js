@@ -4,12 +4,20 @@ import lnoe_med_logo from "../images/2024_LNoE_Medium_onAccent.svg";
 import map from "../images/Map.svg";
 import DiscordBtn from "../modules/DiscordBtn";
 import * as React from "react";
+import {useState} from "react";
+
+function FAQ(question, answer) {
+
+    const [opened, setOpened] = useState(false);
+    const toggleOpen = () => {
+        setOpened(!opened);
+    };
+
+    return <div className={"LNOE-faq"} onClick={toggleOpen}><h1>{question}</h1></div>
+
+}
 
 function LNOE() {
-
-    const FAQ = (question, answer) => {
-        return <div className={"LNOE-faq"}></div>
-    }
 
     const signupAd = <div className={"section"}>
         <h2 className={"LNOE"} style={{textAlign: "center"}}>Can you survive the Night?</h2>
@@ -22,7 +30,7 @@ function LNOE() {
     </div>
 
     return <body className={"LNOE"}>
-    <div style={{width: "100vw", height: "4rem"}} />
+    <div style={{width: "100vw", height: "4rem"}}/>
     <div className={"section"}>
         <div className="lnoe-panel"><img src={lnoe_title} alt="Last Night on Earth ad"/></div>
         <h3 className={"LNOE"}><b>June 29th</b> 19:00 - 03:00</h3>
@@ -60,7 +68,7 @@ function LNOE() {
                 Late arrivals or early leaves are possible, report to the bunker (in the level) to do your late sign-up.
             </p>
         </div>
-        <div className={"section"}><img src={map} alt={"Play Area Map"} /></div>
+        <div className={"section"}><img src={map} alt={"Play Area Map"}/></div>
     </div>
     <div className={"section"}><a href="https://discord.gg/95KWPNhKkf">
         <div className="LNOE-btn" style={{flexDirection: "column"}}>

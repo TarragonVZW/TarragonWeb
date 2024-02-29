@@ -49,3 +49,13 @@ body.LNOE {
     color: var(--lnoe-accent-text);
     margin: 1rem;
 }
+
+.LNOE-faq {
+    background-color: var(--lnoe-light-bg);
+    border-radius: var(--rounding);
+    color: var(--lnoe-light-text);
+}
+
+.LNOE-faq h1 {
+    color: var(--lnoe-light-text);
+}
