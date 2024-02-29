@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.4c53f0cd.css",
-    "main.js": "/static/js/main.ffdba3bb.js",
+    "main.js": "/static/js/main.556bba58.js",
     "static/media/Brenainn.jpg": "/static/media/Brenainn.75b46e76e6185d899f76.jpg",
     "static/media/Cis.png": "/static/media/Cis.0195e440ea34de806afc.png",
     "static/media/Stef.jpg": "/static/media/Stef.beca86d037144e38d7dc.jpg",
@@ -22,18 +22,18 @@
     "static/media/ROCCB___.TTF": "/static/media/ROCCB___.4f14b3c88b593b05cdb2.TTF",
     "static/media/ROCC____.TTF": "/static/media/ROCC____.13a18ea2a96a338850ab.TTF",
     "static/media/ROCKEB.TTF": "/static/media/ROCKEB.b679a84dcc76f24c6381.TTF",
+    "static/media/Map.svg": "/static/media/Map.600880171aa65f5538333c9107945a7a.svg",
     "static/media/logoPauls2015.png": "/static/media/logoPauls2015.e5e551e55c5af542610e.png",
     "static/media/Baristokat.png": "/static/media/Baristokat.9b073213d832dcd505a4.png",
     "static/media/2024_LNoE_Medium_onAccent.svg": "/static/media/2024_LNoE_Medium_onAccent.90340e1e75f07a4e6aa1d276fa5a4f8f.svg",
     "static/media/2024_LNOE_Title_onBlack.svg": "/static/media/2024_LNOE_Title_onBlack.e7a715acd4c35de7f20e8c7b51169e02.svg",
-    "static/media/Map.svg": "/static/media/Map.fae800bddbd510951c455c3c49cf76a7.svg",
     "static/media/Tarragon_Title.svg": "/static/media/Tarragon_Title.c73924c294104c8debdd564fa0cae518.svg",
     "index.html": "/index.html",
     "main.4c53f0cd.css.map": "/static/css/main.4c53f0cd.css.map",
-    "main.ffdba3bb.js.map": "/static/js/main.ffdba3bb.js.map"
+    "main.556bba58.js.map": "/static/js/main.556bba58.js.map"
   },
   "entrypoints": [
     "static/css/main.4c53f0cd.css",
-    "static/js/main.ffdba3bb.js"
+    "static/js/main.556bba58.js"
   ]
 }
