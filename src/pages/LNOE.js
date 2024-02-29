@@ -237,8 +237,8 @@ function LNOE() {
                 Earth.
             </p>
         </div>
-        <br/>
         <div className={"section"}><DiscordBtn/></div>
+        <br/>
     </div>
 }
 
