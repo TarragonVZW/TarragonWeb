@@ -88,7 +88,11 @@ function LNOE() {
         </a></div>
         <div className={"section"}>
             <h1 className={"LNOE"}>FAQ</h1>
-            {FAQ("What should I bring?", "You should have your id and ticket with you. We recommend bringing a flashlight, a waterbottle (free water available), and some comfortable running shoes.")}
+            <div className={"faqlist"}>
+                {FAQ("What should I bring?", "You should have your id and ticket with you. We recommend bringing a flashlight, a waterbottle (free water available), and some comfortable running shoes.")}
+                {FAQ("Food And Drinks?", "There is free water as well as Sandwiches and non-alcoholic beverages available.")}
+                {FAQ("Late arrivals and early departures", "There's no problem with arriving late or leaving early. If you're leaving early please notify the bunker so we don't have to file missing person reports.")}
+            </div>
         </div>
         <div className={"section"} id={"Rules"}>
             <h1 className={"LNOE"}>Rules</h1>
