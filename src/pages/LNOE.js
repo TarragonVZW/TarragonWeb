@@ -38,7 +38,7 @@ function LNOE() {
     </div>
 
     return <div className={"LNOE"}>
-        <div style={{width: "100vw", height: "4rem"}}/>
+        <div style={{width: "100%", height: "4rem"}}/>
         <div className={"section"}>
             <div className="lnoe-panel"><img src={lnoe_title} alt="Last Night on Earth ad"/></div>
             <h3 className={"LNOE"}><b>June 29th</b> 19:00 - 03:00</h3>
@@ -74,7 +74,8 @@ function LNOE() {
                     Botenkopersstraat 2,<br/>
                     8500 Kortrijk<br/>
                     <br/>
-                    Late arrivals or early leaves are possible, report to the bunker (in the level) to do your late
+                    Late arrivals or early leaves are possible, report to <i>the bunker</i> (in the level) to do your
+                    late
                     sign-up.
                 </p>
             </div>
@@ -89,13 +90,40 @@ function LNOE() {
         <div className={"section"}>
             <h1 className={"LNOE"}>FAQ</h1>
             <div className={"faqlist"}>
-                {FAQ("What should I bring?", "You should have your id and ticket with you. We recommend bringing a flashlight, a waterbottle (free water available), and some comfortable running shoes.")}
+                {FAQ("Roles", <ul>
+                    <li><b>Humans:</b> Identified by a blue bandana. Your goal is to survive and complete the missions.
+                    </li>
+                    <li><b>Zombies:</b> Identified by a blue bandana & reflective bands on either upper arm. Your goal
+                        is to eat all humans
+                    </li>
+
+                    <li><b>Referees:</b> Identified by high-vis vests and/or blinking lights.</li>
+                </ul>)}
+                {FAQ("What happens if I die?",
+                    <ul>
+                        <li>If you (human) get tagged by a zombie, call out "HIT!" and return with them to <i>the
+                            Bunker</i>. There you have the option to become a zombie or sign out.
+                        </li>
+                        <li>If you (Zombie) get hit by a Human's weapon, call out "HIT!" and return to a hive, touch it
+                            and you may <i>"Respawn."</i></li>
+                    </ul>)}
+                {FAQ("Where can I find updates?", <>You can find updates on <a href='https://discord.gg/95KWPNhKkf' style={{color:"var(--lnoe-accent)", textDecoration:"underline"}}>our discord    </a> (link also above).</>)}
+                {FAQ("What should I bring?", "You should have your id and ticket with you. We recommend bringing a flashlight, a waterbottle (free water available), and some comfortable running shoes. Feel free to dress up if you'd like!")}
                 {FAQ("Food And Drinks?", "There is free water as well as Sandwiches and non-alcoholic beverages available.")}
+                {FAQ("Weapons & Items", <ul>
+                    <li>Humans get a shortened version of a pool noodle. If you break it, you lose it. Return broken
+                        weapons to <i>the Bunker</i>. Don’t litter.
+                    </li>
+                    <li>You'll receive a blue bandana and, if you're a zombie, 2 reflective bands. Report to <i>the
+                        Bunker</i> if there are any issues.
+                    </li>
+                </ul>)}
+                {FAQ("Liability", "Tarragon VZW is not responsible for any accidents during the event. There's a first aid kit and trained staff available in case it is needed.")}
                 {FAQ("Late arrivals and early departures", "There's no problem with arriving late or leaving early. If you're leaving early please notify the bunker so we don't have to file missing person reports.")}
             </div>
         </div>
         <div className={"section"} id={"Rules"}>
-            <h1 className={"LNOE"}>Rules</h1>
+            <h1 className={"LNOE"}>Rules/ToS</h1>
             <p className={"LNOE"}>
                 <il>
                     <li><b>Objective</b>:
@@ -125,6 +153,8 @@ function LNOE() {
                                 </li>
                                 <li>All zombies get reflective armbands they must wear around both their upper arms.
                                 </li>
+                                <li>Referees will wear high-vis vests and/or blinking lights.
+                                </li>
                             </li>
                         </ul>
                     </li>
@@ -141,14 +171,9 @@ function LNOE() {
                                 pretend to be human.
                             </li>
                             <li>Once tagged, humans must call out “HIT!” and raise their hand. They will become zombies
-                                and
-                                must
-                                join
-                                the zombie horde. Both the newly infected zombie and the one who tagged them must
-                                convene at
-                                the
-                                bunker
-                                where the kill will be confirmed.
+                                and must join the zombie horde. Both the newly infected zombie and the one who tagged
+                                them must
+                                convene at <i>the bunker</i> where the kill will be confirmed.
                             </li>
                             <li>Humans can stun zombies by tagging them with foam weapons, removing them temporarily.
                                 Zombies must
@@ -164,10 +189,22 @@ function LNOE() {
                             </li>
                             <li>Humans must complete missions and objectives to earn points and advance in the game.
                             </li>
-                            <li>Leaving early is possible by signing out at the bunker. (This counts as a loss for you.)
+                            <li>Leaving early is possible by signing out at <i>the bunker</i>. (This counts as a loss
+                                for you.)
                             </li>
                         </ul>
                     </li>
+
+                    <li><b>Locations</b>:
+                        <ul>
+                            <li>Safe Zones (You may not play in or near the following areas):
+                                <ul>
+                                    <li>Restrooms</li>
+                                    <li>In <i>the bunker</i> (designated room in the level, see map)</li>
+                                    <li>The break area (Lounge area in the level)</li>
+                                    <li>On roads</li>
+                                </ul></li>
+                        </ul></li>
 
                     <li><b>Safety Rules</b>:
                         <ul>
@@ -191,7 +228,7 @@ function LNOE() {
                                 have been
                                 completed, or at 03:00 (am).
                             </li>
-                            <li>Arriving late or leaving early is possible by visiting The Bunker.</li>
+                            <li>Arriving late or leaving early is possible by visiting <i>The Bunker</i>.</li>
                             <li>If humans successfully complete all missions, they win the game.</li>
                             <li>If zombies successfully infect all humans, they win the game.</li>
                         </ul>

@@ -41,6 +41,7 @@ div.LNOE {
     /*margin: auto;*/
 }
 
+
 .LNOE-btn img {
     height: 4rem;
 }
@@ -97,11 +98,16 @@ div.LNOE {
     font-family: "Open Runde", "Inter", sans-serif;
 }
 
+.LNOE-faq b {
+    color: var(--lnoe-light-text);
+    font-family: "Open Runde", "Inter", sans-serif;
+}
+
 @media only screen and (min-width: 600px) {
     .faqlist {
         flex-direction: row;
         justify-content: center;
-        align-items: center;
+        align-items: baseline;
     }
     .LNOE-faq {
         width: 18rem;
