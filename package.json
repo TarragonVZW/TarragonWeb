@@ -1,7 +1,7 @@
 {
   "name": "TarragonWeb",
-  "homepage": "https://test.Tarragon.be/",
-  "version": "0.1.0",
+  "homepage": "https://Tarragon.be/",
+  "version": "2.3.5",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
