@@ -14,7 +14,7 @@ function App() {
     return (
         <>
             <Navbar />
-            <div style={{width: "100vw", height: "4rem"}} />
+            <div style={{width: "100%", height: "4rem"}} />
             <Routes>
                 <Route path="/" element={<Home/>}/>
                 <Route path="/LNOE" element={<LNOE/>}/>

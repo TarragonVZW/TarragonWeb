@@ -17,13 +17,11 @@ function Home() {
                     We meet <span className="text-primary">every Wednesday</span> from 19:00 to 22:00 @ Crafty Potions
                     (Sint-Janstraat 21, Kortrijk)</p>
             </div>
-            <div className={"ads"}>
-                <div className="section">
+            <div className={"section ads"}>
                     <Link to="/LNOE">
                         <h1>Don't Miss This!</h1>
                         <div className="lnoe-panel"><img src={lnoe_title} alt="Last Night on Earth ad"/></div>
                     </Link>
-                </div>
                 <div className="section"><DiscordBtn/></div>
             </div>
         </div>
