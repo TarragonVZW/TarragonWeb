@@ -27,14 +27,15 @@ function FAQ(question, answer) {
 
 function LNOE() {
 
-    const signupAd = <div className={"section"}>
+    const signupAd = <div className={"section"}><a
+        href={"https://docs.google.com/forms/d/e/1FAIpQLSedUPbXbGz33p7PWyYfrO4owjAI6bVJ0tivkDZLdeBfvGe5Lw/viewform"}>
         <h2 className={"LNOE"} style={{textAlign: "center"}}>Can you survive the Night?</h2>
         <div className={"LNOE-btn"}>
             <h1>Sign up here!</h1>
             <img alt={"LNOE logo"} src={lnoe_med_logo}/>
         </div>
         <small className={"LNOE"} style={{textAlign: "center"}}>Max 100 participants, tickets available while supply
-            lasts.</small>
+            lasts.</small></a>
     </div>
 
     return <div className={"LNOE"}>
@@ -107,7 +108,12 @@ function LNOE() {
                         <li>If you (Zombie) get hit by a Human's weapon, call out "HIT!" and return to a hive, touch it
                             and you may <i>"Respawn."</i></li>
                     </ul>)}
-                {FAQ("Where can I find updates?", <>You can find updates on <a href='https://discord.gg/95KWPNhKkf' style={{color:"var(--lnoe-accent)", textDecoration:"underline"}}>our discord    </a> (link also above).</>)}
+                {FAQ("Where can I find updates?", <>You can find updates on <a href='https://discord.gg/95KWPNhKkf'
+                                                                               style={{
+                                                                                   color: "var(--lnoe-accent)",
+                                                                                   textDecoration: "underline"
+                                                                               }}>our discord </a> (link also
+                    above).</>)}
                 {FAQ("What should I bring?", "You should have your id and ticket with you. We recommend bringing a flashlight, a waterbottle (free water available), and some comfortable running shoes. Feel free to dress up if you'd like!")}
                 {FAQ("Food And Drinks?", "There is free water as well as Sandwiches and non-alcoholic beverages available.")}
                 {FAQ("Weapons & Items", <ul>
@@ -120,6 +126,16 @@ function LNOE() {
                 </ul>)}
                 {FAQ("Liability", "Tarragon VZW is not responsible for any accidents during the event. There's a first aid kit and trained staff available in case it is needed.")}
                 {FAQ("Late arrivals and early departures", "There's no problem with arriving late or leaving early. If you're leaving early please notify the bunker so we don't have to file missing person reports.")}
+                {FAQ("Ticket Price", <>
+                    <ul>
+                        <li>€ 9,00 presale</li>
+                        <li>€ 5,50 for Kobolds</li>
+                    </ul>
+                    buy your <a href='https://docs.google.com/forms/d/e/1FAIpQLSedUPbXbGz33p7PWyYfrO4owjAI6bVJ0tivkDZLdeBfvGe5Lw/viewform'
+                                style={{
+                                    color: "var(--lnoe-accent)",
+                                    textDecoration: "underline"
+                                }}>tickets here.</a></>)}
             </div>
         </div>
         <div className={"section"} id={"Rules"}>
