@@ -7,19 +7,19 @@
   },
   {
     "name": "Stef",
-    "title": "Viceroy, PR",
+    "title": "Viceroy, Ld. PR",
     "image": "images/Stef.jpg",
     "link": "https://www.artstation.com/silverlionfang"
   },
   {
     "name": "Bert",
-    "title": "Ld. Discord",
+    "title": "Ld. Discord, PR",
     "image": "images/Bert.jpg",
     "link": "http://Tarragon.be/"
   },
   {
     "name": "Brenainn",
-    "title": "General Venturer",
+    "title": "General Venturer, PR",
     "image": "images/Brennain.jpg",
     "link": "http://Tarragon.be/"
   },
@@ -31,13 +31,13 @@
   },
   {
     "name": "Farah",
-    "title": "Ld. Treasurer, Media",
+    "title": "Ld. Treasurer, Ld. HR, Media",
     "image": "images/Farah.jpg",
     "link": "https://www.artstation.com/farahclaessens"
   },
   {
     "name": "Jasper",
-    "title": "Ld. Secretary, Ld. Media, Ld. Scribe",
+    "title": "Ld. Secretary, Ld. Media, Ld. Scribe, HR",
     "image": "images/Jasper.jpg",
     "link": "https://www.artstation.com/zorth"
   },
@@ -46,11 +46,5 @@
     "title": "Discord",
     "image": "images/Leander.jpg",
     "link": "https://www.linkedin.com/in/leander-s-m-flossie-82068b253/"
-  },
-  {
-    "name": "Nox",
-    "title": "Ld. PR, HR",
-    "image": "images/Nox.jpg",
-    "link": "http://Tarragon.be/"
   }
 ]
