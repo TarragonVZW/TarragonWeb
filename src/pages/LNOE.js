@@ -136,7 +136,9 @@ function LNOE() {
                                     color: "var(--lnoe-accent)",
                                     textDecoration: "underline"
                                 }}>tickets here.</a></>)}
+                {FAQ("Dying with weapons/items", "Return to the bunker with your weapon/item in hand, we will redistribute it.")}
             </div>
+
         </div>
         <div className={"section"} id={"Rules"}>
             <h1 className={"LNOE"}>Rules/ToS</h1>
