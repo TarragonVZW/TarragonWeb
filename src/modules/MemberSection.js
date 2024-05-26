@@ -10,7 +10,7 @@ function MemberSection() {
         "Crafty Potions": logoCraft,
         "Paul's Fresh Food Boutique": logoPauls,
         "B'aristokat": logoBarist,
-        "D&DVlaanderen": logoDNDVL
+        "D&D Vlaanderen": logoDNDVL
     }
 
     return <>
