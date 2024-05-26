@@ -2,13 +2,15 @@ import sponsors from "../dbs/sponsors.json";
 import logoPauls from "../images/logoPauls2015.png";
 import logoBarist from "../images/Baristokat.png";
 import logoCraft from "../images/CraftyPotions.png";
+import logoDNDVL from "../images/DNDVL.png"; 
 
 function MemberSection() {
 
     const logo_dict = {
         "Crafty Potions": logoCraft,
         "Paul's Fresh Food Boutique": logoPauls,
-        "B'aristokat": logoBarist
+        "B'aristokat": logoBarist,
+        "D&DVlaanderen": logoDNDVL
     }
 
     return <>
