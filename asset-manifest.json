@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.02cb222d.css",
-    "main.js": "/static/js/main.05c39493.js",
+    "main.js": "/static/js/main.bef451f2.js",
     "static/media/Brenainn.jpg": "/static/media/Brenainn.75b46e76e6185d899f76.jpg",
     "static/media/Cis.png": "/static/media/Cis.0195e440ea34de806afc.png",
     "static/media/Stef.jpg": "/static/media/Stef.beca86d037144e38d7dc.jpg",
@@ -15,6 +15,7 @@
     "static/media/OpenRunde-Bold.woff2": "/static/media/OpenRunde-Bold.30ce13955c3f8819dea7.woff2",
     "static/media/OpenRunde-Regular.woff2": "/static/media/OpenRunde-Regular.3a2561edba0b51c5bd0e.woff2",
     "static/media/Nox.jpg": "/static/media/Nox.70e99f629ee494f61094.jpg",
+    "static/media/DNDVL.png": "/static/media/DNDVL.6cf989f9e0a806a36e0b.png",
     "static/media/ROCKI.TTF": "/static/media/ROCKI.af514d7dc9cdbea5b49c.TTF",
     "static/media/ROCKBI.TTF": "/static/media/ROCKBI.1371ee1e8a40d5cdf0e1.TTF",
     "static/media/ROCK.TTF": "/static/media/ROCK.d4c47d23aceb5a1710d6.TTF",
@@ -30,10 +31,10 @@
     "static/media/Tarragon_Title.svg": "/static/media/Tarragon_Title.1de7b0b3e9144a56b81ea6be0d4bb711.svg",
     "index.html": "/index.html",
     "main.02cb222d.css.map": "/static/css/main.02cb222d.css.map",
-    "main.05c39493.js.map": "/static/js/main.05c39493.js.map"
+    "main.bef451f2.js.map": "/static/js/main.bef451f2.js.map"
   },
   "entrypoints": [
     "static/css/main.02cb222d.css",
-    "static/js/main.05c39493.js"
+    "static/js/main.bef451f2.js"
   ]
 }
