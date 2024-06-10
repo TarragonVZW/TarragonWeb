@@ -1,4 +1,5 @@
 import form from '../images/Tarragon_Dragon_Recruitment_Form_24-25.docx';
+import recruitImage from '../images/FB_DragonRecruitment.jpg';
 
 const images = require.context('../images/dragons', true);
 
@@ -24,6 +25,8 @@ function DragonSignup() {
                     <small>Send <u>this form</u> to tarragonvzw@gmail.com</small>
                 </div>
             </a>
+        <br />
+        <img src={recruitImage} />
         </div>
     </>
 }
