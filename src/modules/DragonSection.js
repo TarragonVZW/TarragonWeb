@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import dragons from '../dbs/dragons.json';
 
 const images = require.context('../images/dragons', true);
@@ -22,8 +23,15 @@ function DragonSection() {
                     <p style={{textAlign: "center"}}>{dragon.title}</p>
                 </div>
             })}
+    <Link to="/DragonSignup"> 
+            <div className={"SignupBtn"}>
+                <h1>Become a Dragon?!</h1>
+                <small>Click here to find out more!</small>
+            </div>
+        </Link>
         </div>
     </>
 }
+
 
 export default DragonSection;
